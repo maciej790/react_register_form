@@ -5,6 +5,8 @@ import {
   UserForm,
   Input,
   Submit,
+  SignInText,
+  SignInLink,
 } from "./StyledRegisterForm";
 
 function RegisterForm() {
@@ -20,6 +22,12 @@ function RegisterForm() {
         <Input type="password" placeholder="Password" name="password" />
         <Submit type="submit" value="Register" name="submit" />
       </UserForm>
+      <SignInText>
+        Already have an account?{" "}
+        <span>
+          <SignInLink href="#">Sign in</SignInLink>
+        </span>
+      </SignInText>
     </StyledRegisterForm>
   );
 }

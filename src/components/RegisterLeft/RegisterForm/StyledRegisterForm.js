@@ -57,3 +57,16 @@ export const Submit = styled.input`
     cursor: pointer;
   }
 `;
+
+export const SignInText = styled.p`
+  color: ${colors.darkGray};
+  text-align: center;
+  margin-top: 50px;
+  font-size: 15px;
+`;
+
+export const SignInLink = styled.a`
+  text-decoration: none;
+  color: ${colors.blue};
+  font-weight: bold;
+`;
