@@ -3,6 +3,7 @@ import { colors } from "../../../style/variables";
 
 export const StyledClaimText = styled.header`
   width: 100%;
+  text-align: center;
 `;
 
 export const H1 = styled.h1`
