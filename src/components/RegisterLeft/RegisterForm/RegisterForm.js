@@ -1,10 +1,25 @@
 import React from "react";
-import { StyledRegisterForm } from "./StyledRegisterForm";
+import {
+  StyledRegisterForm,
+  P,
+  UserForm,
+  Input,
+  Submit,
+} from "./StyledRegisterForm";
 
 function RegisterForm() {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <StyledRegisterForm>
-      <h1>Register</h1>
+      <P>or use e-mail</P>
+      <UserForm action="" method="post" onSubmit={handleSubmit}>
+        <Input type="text" placeholder="Email" name="email" />
+        <Input type="password" placeholder="Password" name="password" />
+        <Submit type="submit" value="Register" name="submit" />
+      </UserForm>
     </StyledRegisterForm>
   );
 }
