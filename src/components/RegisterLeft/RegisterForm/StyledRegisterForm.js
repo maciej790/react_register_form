@@ -30,6 +30,10 @@ export const Input = styled.input`
   margin-top: 20px;
   text-align: center;
 
+  &:nth-child(1) {
+    margin: 0;
+  }
+
   ::placeholder {
     text-align: left;
     padding-left: 20px;
