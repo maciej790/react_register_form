@@ -12,5 +12,7 @@ export const font = {
 
 export const rwd = {
   mobile: "375px",
+  tablet: "600px",
   desktop: "1440px",
+  bigDesktop: "1800px",
 };

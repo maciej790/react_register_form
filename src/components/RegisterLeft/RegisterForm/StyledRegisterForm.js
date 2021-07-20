@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { colors } from "../../../style/variables";
+import { colors, rwd } from "../../../style/variables";
 
 export const StyledRegisterForm = styled.section`
   width: 100%;
@@ -30,6 +30,18 @@ export const Input = styled.input`
   margin-top: 20px;
   text-align: center;
 
+  @media (min-width: ${rwd.desktop}){
+    width: 50%;
+  }
+  
+  @media (min-width: ${rwd.bigDesktop}){
+    width: 40%;
+  }
+
+  @media (min-width: ${rwd.tablet}){
+    width: 60%;
+  }
+
   &:nth-child(1) {
     margin: 0;
   }
@@ -51,6 +63,18 @@ export const Submit = styled.input`
   margin-top: 30px;
   color: ${colors.white};
   transition: transform 0.3s ease-in-out;
+
+  @media (min-width: ${rwd.desktop}){
+    width: 50%;
+  }
+
+  @media (min-width: ${rwd.bigDesktop}){
+    width: 40%;
+  }
+
+  @media (min-width: ${rwd.tablet}){
+    width: 60%;
+  }
 
   &:hover {
     transform: scale(0.8);

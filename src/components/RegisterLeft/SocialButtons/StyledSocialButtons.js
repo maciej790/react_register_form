@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { colors } from "../../../style/variables";
+import { colors, rwd } from "../../../style/variables";
 
 export const StyledSocialButtons = styled.div`
   width: 100%;
@@ -9,6 +9,18 @@ export const StyledSocialButtons = styled.div`
   align-items: center;
   justify-content: space-between;
   margin-top: 40px;
+
+  @media (min-width: ${rwd.desktop}){
+    width: 50%;
+  }
+
+  @media (min-width: ${rwd.bigDesktop}){
+    width: 40%;
+  }
+
+  @media (min-width: ${rwd.tablet}){
+    width: 60%;
+  }
 `;
 
 export const Button = styled.button`
